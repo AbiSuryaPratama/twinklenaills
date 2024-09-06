@@ -133,15 +133,15 @@
       height: auto; /* Menyesuaikan tinggi gambar */
     }
 
-    #contact img {
-      position: absolute;
-      top: 10000; 
-      right: -80;
-      max-height: 400px; /* Mengatur ukuran maksimum gambar */
-      max-width: 100%;
-      height: auto;
-      z-index: 1; 
-    }
+    .img-fluid {
+    position: absolute;
+    top: -429px; /* Sesuaikan dengan posisi yang diinginkan */
+    right: 299px; /* Sesuaikan dengan posisi yang diinginkan */
+    max-height: 800px;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
 
     .pink-background {
       background-color: #FF8C9E;
@@ -195,15 +195,17 @@
         padding: 10px; /* Menambahkan padding pada layar lebih kecil */
         text-align: center;
       }
+      .gallery-title {
+        font-size: 20px;
+      }
+      #gallery img{
+      width: 300px;
+      height: 100%;
+      }
 
       .carousel-item {
         flex: 0 0 100%;
         max-width: 100%;
-      }
-
-      #contact img {
-        max-height: 200px;
-        right: 20px;
       }
       /* Tambahkan padding dan margin pada navbar collapse */
 .navbar-collapse {
