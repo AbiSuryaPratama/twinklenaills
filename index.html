@@ -13,7 +13,7 @@
 
     .navbar-custom {
       background-color: #FF8C9E;
-      height: 75px;
+      height: 90px;
     }
 
     .nav-brand {
@@ -101,7 +101,6 @@
     #contact {
       background-color: #FF8C9E;
       position: relative;
-      padding: 30px; /* Menambahkan padding pada contact section */
     }
 
     #contact .text-content {
@@ -129,11 +128,15 @@
      color: white;
      border: 1px solid #fff;
     }
+    .carousel-item img {
+      max-width: 600px; /* Ukuran maksimum gambar */
+      height: auto; /* Menyesuaikan tinggi gambar */
+    }
 
     #contact img {
       position: absolute;
-      top: 0; 
-      right: 0;
+      top: 10000; 
+      right: -80;
       max-height: 400px; /* Mengatur ukuran maksimum gambar */
       max-width: 100%;
       height: auto;
@@ -162,17 +165,6 @@
       border-top: 1px solid #FF8C9E; 
     }
 
-    @media (max-width: 768px) {
-      .carousel-item img {
-        width: 100%;
-        margin-bottom: 10px; /* Menambahkan margin bawah untuk pemisahan */
-    }
-}
-      .carousel-item {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
 @media (max-width: 576px) {
     .carousel-item {
         flex: 0 0 100%;
@@ -194,10 +186,6 @@
         max-width: 50%;
       }
 
-      #contact img {
-        max-height: 300px; /* Menyesuaikan ukuran gambar */
-        right: 50px;
-      }
       .carousel-item img {
         width: 100%;
         margin-bottom:10px;
@@ -217,9 +205,7 @@
         max-height: 200px;
         right: 20px;
       }
-    }
-
-/* Tambahkan padding dan margin pada navbar collapse */
+      /* Tambahkan padding dan margin pada navbar collapse */
 .navbar-collapse {
     padding: 15px;
     background-color: #FF8C9E;
@@ -245,6 +231,8 @@
     #contact img {
       visibility: hidden;
     }
+    }
+
   </style>
 </head>
 <body>
@@ -295,28 +283,27 @@
           <div class="carousel-inner">
               <!-- Slide 1 -->
               <div class="carousel-item active">
-                  <div class="d-flex justify-content-center flex-wrap">
-                      <img src="img/nail1.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 1">
-                      <img src="img/nail2.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 2">
-                      <img src="img/nail3.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 3">
-                  </div>
+                <div class="d-flex justify-content-center">
+                  <img src="img/nail1.jpg" class="d-block w-25 mx-2" alt="Image 1">
+                  <img src="img/nail2.jpg" class="d-block w-25 mx-2" alt="Image 2">
+                  <img src="img/nail3.jpg" class="d-block w-25 mx-2" alt="Image 3">
+                </div>
               </div>
-              <!-- Slide 2 -->
               <div class="carousel-item">
-                  <div class="d-flex justify-content-center flex-wrap">
-                      <img src="img/nail4.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 4">
-                      <img src="img/nail5.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 5">
-                      <img src="img/nail6.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 6">
-                  </div>
+                <div class="d-flex justify-content-center">
+                  <img src="img/nail4.jpg" class="d-block w-25 mx-2" alt="Image 4">
+                  <img src="img/nail5.jpg" class="d-block w-25 mx-2" alt="Image 5">
+                  <img src="img/nail6.jpg" class="d-block w-25 mx-2" alt="Image 6">
+                </div>
               </div>
-              <!-- Slide 3 -->
               <div class="carousel-item">
-                  <div class="d-flex justify-content-center flex-wrap">
-                      <img src="img/nail7.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 7">
-                      <img src="img/nail8.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 8">
-                      <img src="img/nail9.jpg" class="d-block img-fluid mx-2 w-100" alt="Image 9">
-                  </div>
+                <div class="d-flex justify-content-center">
+                  <img src="img/nail7.jpg" class="d-block w-25 mx-2" alt="Image 7">
+                  <img src="img/nail8.jpg" class="d-block w-25 mx-2" alt="Image 8">
+                  <img src="img/nail9.jpg" class="d-block w-25 mx-2" alt="Image 9">
+                </div>
               </div>
+              
           </div>
           <!-- Carousel Controls with < and > -->
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
